@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: dev
+    namespace: prod
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/ajidevops/fintech-gitops.git
@@ -13,7 +13,7 @@ spec:
     path: payment-gateway
     helm:
       valueFiles:
-        - values/dev.yaml
+        - values/prod.yaml
   project: default
   syncPolicy:
     automated:
