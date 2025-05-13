@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: payment-gateway-dev
+  name: payment-gateway-prod
   namespace: argocd
 spec:
   destination:
